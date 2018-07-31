@@ -1,19 +1,19 @@
-### **URL shortner is a small node app which uses mongoDB and aws lambda to deploy that node app.**
+# **URL shortner is a small node app which uses mongoDB and aws lambda to deploy that node app.**
 
 Steps To deploy/run url shortener app
-#create mongo db
+# create mongo db
 use url_shortener;
 
-## to download deps
+## download deps
 npm install
-#start node project, go to project directory
+## start node project, go to project directory
 nodejs app.js
 
-#then run query on mongoshell for first time after running app
+# run query on mongoshell for first time after running app
 db.counters.insert({ _id: 'url_count', seq: 999999999 })
 
 
-#reference to setup
+## reference to setup
 1. for node app setup
     https://coligo.io/create-url-shortener-with-node-express-mongo/
 
@@ -23,16 +23,16 @@ db.counters.insert({ _id: 'url_count', seq: 999999999 })
 3. Forbidden issue
     https://forums.aws.amazon.com/thread.jspa?threadID=225659
 
-+#example
-+config.db.url=mongodb://UESR:PWD@PRIMARY,SECONDARY/DB_NAME?replicaSet=REPLICASET_URL
+# example
+config.db.url=mongodb://UESR:PWD@PRIMARY,SECONDARY/DB_NAME?replicaSet=REPLICASET_URL
 
 
-#take care about config.js
+# take care about config.js
 it's not been commited in code I am just committing reference with name config_example.js
 
 
 
-##to make build and deploy on aws lambda
-#be careful to run these command it will update you app on aws if give correct creds 
+# to make build and deploy on aws lambda
+# be careful to run these command it will update you app on aws if correct creds given
 npm run deploy
 
