@@ -32,8 +32,8 @@ config.db.url=mongodb://UESR:PWD@PRIMARY,SECONDARY/DB_NAME?replicaSet=REPLICASET
 it's not been commited in code I am just committing reference with name config_example.js
 
 
+# Important Note
+to make build and deploy on aws lambda, Be careful to run these command it will update you app on aws if correct creds given
 
-# to make build and deploy on aws lambda
-# be careful to run these command it will update you app on aws if correct creds given
 npm run deploy
 
