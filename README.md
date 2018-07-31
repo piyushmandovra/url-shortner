@@ -1,6 +1,6 @@
-# **URL shortner is a small node app which uses mongoDB and aws lambda to deploy that node app.**
+## URL shortner is a small node app which uses mongoDB and aws lambda to deploy that node app.
 
-Steps To deploy/run url shortener app
+## Steps To deploy/run url shortener app
 # create mongo db
 use url_shortener;
 
