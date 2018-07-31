@@ -28,7 +28,7 @@ db.counters.insert({ _id: 'url_count', seq: 999999999 })
 
 
 #take care about config.js
-it's not been commited in code I am just comminting reference with name config_example.js
+it's not been commited in code I am just committing reference with name config_example.js
 
 
 
